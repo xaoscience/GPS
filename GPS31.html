@@ -1,0 +1,320 @@
+<!DOCTYPE HTML>
+<html>
+<div id="map"></div>
+<div id="w1" class="imgwrapper">
+    <a href="https://photos.app.goo.gl/unSxHEKHnoDqaaDR6">Photos</a>
+    <img class="imgs" src="https://photos.app.goo.gl/vwHvBDuk41jKV9jt7">
+    <p class="comment">
+        While approaching the lake, we found that it was more distant than usual. It was evident the waterlevel had degressed, but this small pond usually has grand fluctuations and it raised no concern.
+    </p>
+    <a>Algae cellcount</a>
+    <p class="cellcount">
+
+    </p>
+</div>
+<div id="w2" class="imgwrapper">
+    <a href="https://photos.app.goo.gl/unSxHEKHnoDqaaDR6">Photos</a>
+    <p class="comment">
+        This lake has always been hidden by tall grass, e.a. and has been an iddylic haven for many organisms. The bed has been raised in the middle, dividing the pond. It was a little lower than usual with very moist borders.
+    </p>
+    <a>Algae cellcount</a>
+    <p class="cellcount">
+        
+    </p>
+</div>
+<div id="w3" class="imgwrapper">
+    <a href="https://photos.app.goo.gl/unSxHEKHnoDqaaDR6">Photos</a>
+    <p class="comment">
+        The most popular and great pond of the Platweiers is always a beautiful sight to behold or (some years) a great place to ice-skate. What we didn't expect was what seemed to be a result of the recent heatwave, resembling a terrible drought. We found almost dried out layers of sludge and the shells of fresh water pearlclams.    
+    </p>
+    <a>Algae cellcount</a>
+    <p class="cellcount">
+        
+    </p>
+</div>
+<div id="w4" class="imgwrapper">
+    <a href="https://photos.app.goo.gl/unSxHEKHnoDqaaDR6">Photos</a>
+    <p class="comment">
+        Small pond connected through a tube with the previous big lake. Still, the stilness of the water, the shadows cast, e.a. might still differ grandly, thus taking a sample still seemed interesting.
+    </p>
+    <a>Algae cellcount</a>
+    <p class="cellcount">
+        
+    </p>
+</div>
+<div id="w5" class="imgwrapper">
+    <a href="https://photos.app.goo.gl/unSxHEKHnoDqaaDR6">Photos</a>
+    <p class="comment">
+        At first, I attempted to approach the lake left of this one. However, both are stillwater fishbreeding ponds and there was a putrid smell of rot coming from the, otherwise very similar, left pond. 
+    </p>
+    <a>Algae cellcount</a>
+    <p class="cellcount">
+        
+    </p>
+</div>
+<div id="w6" class="imgwrapper">
+    <a href="https://photos.app.goo.gl/unSxHEKHnoDqaaDR6">Photos</a>
+    <p class="comment">
+    It was rather brave to cross the barbed wire surround thing this peaceful lake, where birds take rest. It's surrounded by medium prickly brush and nettles, and has been divided by likewise forested banks (more than is shown on google maps) and contained more small plants and possibly more sun than other ponds.    
+    </p>
+    <a>Algae cellcount</a>
+    <p class="cellcount">
+        
+    </p>
+</div>
+<div id="w7" class="imgwrapper">
+    <a href="https://photos.app.goo.gl/unSxHEKHnoDqaaDR6">Photos</a>
+    <p class="comment">
+        This river is connected to the entire Slangebeek running through the forest I call part of my home. I couldn't resist trying to compare the stillwater ponds with a running river and see if it was also very much alive in the matter of microscopic cells.
+    </p>
+    <a>Algae cellcount</a>
+    <p class="cellcount">
+        
+    </p>
+</div>
+<script async defer src="https://maps.googleapis.com/maps/api/js?&key=AIzaSyDZdme-UDOguakLNhMaiw-7O8jeJ5ZNF2g&callback=initMap&&libraries=places&signedin=true"></script>
+<script>
+    // This example creates a simple polygon representing the Bermuda Triangle.
+    // When the user clicks on the polygon an info window opens, showing
+    // information about the polygon's coordinates.
+    var map;
+    var infoWindow;
+    var w1 = document.getElementById("w1");
+    var w2 = document.getElementById("w2");
+    var w3 = document.getElementById("w3");
+    var w4 = document.getElementById("w4");
+    var w5 = document.getElementById("w5");
+    var w6 = document.getElementById("w6");
+    var w7 = document.getElementById("w7");
+    var areas = {
+        'r1': {
+            windowInfo: w1,
+            polyPath: [
+                {lat: 50.964738, lng: 5.335736},
+                {lat: 50.964763, lng: 5.335600},
+                {lat: 50.964708, lng: 5.335543},
+                {lat: 50.964614, lng: 5.335663},
+                {lat: 50.964538, lng: 5.335482},
+                {lat: 50.964327, lng: 5.335347},
+                {lat: 50.964522, lng: 5.334953},
+                {lat: 50.964517, lng: 5.334509},
+                {lat: 50.964335, lng: 5.333856},
+                {lat: 50.963744, lng: 5.332529},
+                {lat: 50.963528, lng: 5.333088},
+                {lat: 50.963802, lng: 5.335472},
+                {lat: 50.964211, lng: 5.335312},
+                {lat: 50.964318, lng: 5.335829},
+                {lat: 50.964723, lng: 5.335750}
+            ],
+            obj: {},
+            name: 'r1',
+        },
+        'r2': {
+            windowInfo: w2,
+            polyPath: [
+                {lat: 50.964747, lng: 5.334411},
+                {lat: 50.965617, lng: 5.333520},
+                {lat: 50.964943, lng: 5.332142},
+                {lat: 50.964183, lng: 5.333255},
+                {lat: 50.964749, lng: 5.334421}
+            ],
+            obj: {},
+            name: 'r2'
+        },
+        'r3': {
+            windowInfo: w3,
+            polyPath: [
+                {lat: 50.965258, lng: 5.335582},
+                {lat: 50.965734, lng: 5.335030},
+                {lat: 50.967272, lng: 5.334138},
+                {lat: 50.969247, lng: 5.336251},
+                {lat: 50.968871, lng: 5.337344},
+                {lat: 50.968873, lng: 5.337911},
+                {lat: 50.969050, lng: 5.338277},
+                {lat: 50.969399, lng: 5.338541},
+                {lat: 50.969353, lng: 5.338723},
+                {lat: 50.969490, lng: 5.338947},
+                {lat: 50.969659, lng: 5.339084},
+                {lat: 50.969829, lng: 5.339106},
+                {lat: 50.970030, lng: 5.338982},
+                {lat: 50.970062, lng: 5.338825},
+                {lat: 50.970896, lng: 5.339265},
+                {lat: 50.970890, lng: 5.339521},
+                {lat: 50.971581, lng: 5.340793},
+                {lat: 50.971948, lng: 5.341377},
+                {lat: 50.972044, lng: 5.342514},
+                {lat: 50.971781, lng: 5.343096},
+                {lat: 50.971889, lng: 5.343916},
+                {lat: 50.971454, lng: 5.343814},
+                {lat: 50.971085, lng: 5.343229},
+                {lat: 50.970436, lng: 5.343721},
+                {lat: 50.970107, lng: 5.342908},
+                {lat: 50.970232, lng: 5.343904},
+                {lat: 50.969803, lng: 5.343843},
+                {lat: 50.969147, lng: 5.344200},
+                {lat: 50.967602, lng: 5.343750},
+                {lat: 50.967394, lng: 5.343253},
+                {lat: 50.967097, lng: 5.343250},
+                {lat: 50.964579, lng: 5.337987},
+                {lat: 50.964641, lng: 5.337756},
+                {lat: 50.964874, lng: 5.337997},
+                {lat: 50.965349, lng: 5.337892},
+                {lat: 50.965344, lng: 5.338286},
+                {lat: 50.965425, lng: 5.338262},
+                {lat: 50.965400, lng: 5.337837},
+                {lat: 50.965394, lng: 5.336522},
+                
+            ],
+            obj: {},
+            name: 'r3'
+        },
+        'r4': {
+            windowInfo: w4,
+            polyPath: [
+                {lat: 50.964835, lng: 5.339002},
+                {lat: 50.965585, lng: 5.340508},
+                {lat: 50.965321, lng: 5.340770},
+                {lat: 50.964841, lng: 5.339459},
+                {lat: 50.964785, lng: 5.339445},
+                {lat: 50.964610, lng: 5.339607},
+                {lat: 50.964525, lng: 5.339523},
+                {lat: 50.964485, lng: 5.339371},
+                {lat: 50.964510, lng: 5.339275},
+                {lat: 50.964821, lng: 5.339007}
+                ],
+            obj: {},
+            name: 'r4'
+        },
+        'r5': {
+            windowInfo: w5,
+            polyPath: [
+                {lat: 50.978906, lng: 5.320014},
+                {lat: 50.980386, lng: 5.319260},
+                {lat: 50.980625, lng: 5.319680},
+                {lat: 50.980730, lng: 5.319670},
+                {lat: 50.980819, lng: 5.319893},
+                {lat: 50.980995, lng: 5.321472},
+                {lat: 50.980944, lng: 5.321558},
+                {lat: 50.979455, lng: 5.322262},
+                {lat: 50.979228, lng: 5.322247},
+                {lat: 50.979257, lng: 5.321488},
+                {lat: 50.979072, lng: 5.321022},
+                {lat: 50.979113, lng: 5.320889},
+                {lat: 50.979237, lng: 5.320796},
+                {lat: 50.979195, lng: 5.320729},
+                {lat: 50.979141, lng: 5.320742},
+                {lat: 50.978986, lng: 5.320405},
+                {lat: 50.978909, lng: 5.320045}
+                ],
+            obj: {},
+            name: 'r5'
+        },
+        'r6': {
+            windowInfo: w6,
+            polyPath: [
+                {lat: 50.981167, lng: 5.318259},
+                {lat: 50.980622, lng: 5.318530},
+                {lat: 50.980583, lng: 5.318778},
+                {lat: 50.980851, lng: 5.319568},
+                {lat: 50.980910, lng: 5.319767},
+                {lat: 50.981070, lng: 5.321152},
+                {lat: 50.981442, lng: 5.321440},
+                {lat: 50.982054, lng: 5.320976},
+                {lat: 50.982158, lng: 5.320661},
+                {lat: 50.982082, lng: 5.320192},
+                {lat: 50.981219, lng: 5.318314}
+            ],
+            obj: {},
+            name: 'r6'
+        },
+        'r7': {
+            windowInfo: w7,
+            polyPath: [
+                {lat: 50.980893, lng: 5.319987},
+                {lat: 50.980405, lng: 5.318674}
+            ],
+            obj: {},
+            name: 'r7'
+        }
+    };
+    function createArea(objInfo, map) {
+        objInfo.obj = new google.maps.Polygon({
+            paths: objInfo.polyPath,
+            strokeColor: "#002966",
+            strokeOpacity: 0.8,
+            strokeWeight: 3,
+            fillColor: "#36688F",
+            fillOpacity: 0.35,
+            content: objInfo
+        });
+        google.maps.event.addListener(objInfo.obj, "mouseover", function() {
+            this.setOptions({
+                fillColor: "#CC6633",
+                strokeColor: "#CC6633"
+            });
+        });
+        google.maps.event.addListener(objInfo.obj, "mouseout", function() {
+            this.setOptions({
+                fillColor: "#36688F",
+                strokeColor: "#002966"
+            });
+        });
+
+        objInfo.obj.setMap(map);
+        objInfo.obj.addListener('click', showArrays);
+    }
+    function showArrays(event) {
+        console.log(this.content);
+        var vertices = this.getPath("r1");
+        infoWindow.setContent(this.content.windowInfo);
+        infoWindow.setPosition(event.latLng);
+        infoWindow.open(map);
+    }
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15.5,
+            center: {lat: 50.97280, lng: 5.329921},
+            mapTypeId: google.maps.MapTypeId.TERRAIN
+        });
+        createArea(areas['r1'], map);
+        createArea(areas['r2'], map);
+        createArea(areas['r3'], map);
+        createArea(areas['r4'], map);
+        createArea(areas['r5'], map);
+        createArea(areas['r6'], map);
+        createArea(areas['r7'], map);
+        infoWindow = new google.maps.InfoWindow;
+    }
+</script>
+<style>
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #map {
+        height: 100%;
+    }
+    .imgwrapper {
+        height:100%;
+        width: 15rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .imgbox {
+        flex-direction: row;
+    }
+    a {
+        font-weight: bold;
+        font-size: 1rem;
+        justify-content: center;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
+</html>
