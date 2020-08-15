@@ -108,6 +108,9 @@
     // This example creates a simple polygon representing the Bermuda Triangle.
     // When the user clicks on the polygon an info window opens, showing
     // information about the polygon's coordinates.
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
     var map;
     var infoWindow;
     var w1 = document.getElementById("w1");
@@ -349,7 +352,10 @@
     .imgs {
         width: 5rem;
         height: auto;
-
+    }
+    body {
+        overflow: hidden;
+        top:0px;
     }
 </style>
 
