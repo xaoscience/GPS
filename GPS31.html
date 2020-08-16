@@ -11,7 +11,7 @@
     <p class="comment">
         While approaching the lake, we found that it was more distant than usual. It was evident the waterlevel had degressed, but this small pond usually has grand fluctuations and it raised no concern.
     </p>
-    <a>Algae cellcount</a>
+    <a>Algae cell count</a>
     <p class="title">
 
     </p>
@@ -30,7 +30,7 @@
         This lake has always been hidden by tall grass, e.a. and has been an iddylic haven for many organisms. The bed has been raised in the middle, dividing the pond. It was a little lower than usual with very moist borders.
     </p>
     <p class="title">
-        Algae cellcount
+        Algae cell count
     </p>
     <p class="cellcount">
         
@@ -67,8 +67,8 @@
             <img class="imgs1" src="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4883.JPG">
         </a>
         <div class="buttons">
-                <button onclick="plusDivs(-1)">&#10094;</button>
-                <button onclick="plusDivs(1)">&#10095;</button>
+                <button class="b" onclick="plusDivs(-1)">&#10094;</button>
+                <button class ="b" onclick="plusDivs(1)">&#10095;</button>
         </div>
     </div>
     <script>
@@ -92,7 +92,7 @@
         The most popular and great pond of the Platweiers is always a beautiful sight to behold or (some years) a great place to ice-skate. What we didn't expect was what seemed to be a result of the recent heatwave, resembling a terrible drought. We found almost dried out layers of sludge and the shells of fresh water pearlclams.    
     </p>
     <p class="title">
-        Algae cellcount
+        Algae cell count
     </p>
     <p class="cellcount">
         
@@ -108,8 +108,8 @@
             <img class="imgs2" src="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4886.JPG">
         </a>
         <div class="buttons">
-                <button onclick="plusDivs(-1)">&#10094;</button>
-                <button onclick="plusDivs(1)">&#10095;</button>
+                <button class="b" onclick="plusDivs(-1)">&#10094;</button>
+                <button class ="b" onclick="plusDivs(1)">&#10095;</button>
         </div>
     </div>
     <script>
@@ -133,7 +133,7 @@
         Small pond connected through a tube with the previous big lake. Still, the stilness of the water, the shadows cast, e.a. might still differ grandly, thus taking a sample still seemed interesting.
     </p>
     <p class="title">
-        Algae cellcount
+        Algae cell count
     </p>
     <p class="cellcount">
         
@@ -164,8 +164,8 @@
             <img class="imgs3" src="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4896.JPG">
         </a>
         <div class="buttons">
-                <button onclick="plusDivs(-1)">&#10094;</button>
-                <button onclick="plusDivs(1)">&#10095;</button>
+                <button class="b" onclick="plusDivs(-1)">&#10094;</button>
+                <button class ="b" onclick="plusDivs(1)">&#10095;</button>
         </div>
     </div>
     <script>
@@ -189,7 +189,7 @@
         At first, I attempted to approach the lake left of this one. However, both are stillwater fishbreeding ponds and there was a putrid smell of rot coming from the, otherwise very similar, left pond. 
     </p>
     <p class="title">
-        Algae cellcount
+        Algae cell count
     </p>
     <p class="cellcount">
         
@@ -206,7 +206,7 @@
     It was rather brave to cross the barbed wire surround thing this peaceful lake, where birds take rest. It's surrounded by medium prickly brush and nettles, and has been divided by likewise forested banks (more than is shown on google maps) and contained more small plants and possibly more sun than other ponds.    
     </p>
     <p class="title">
-        Algae cellcount
+        Algae cell count
     </p>
     <p class="cellcount">
         
@@ -223,7 +223,7 @@
         This river is connected to the entire Slangebeek running through the forest I call part of my home. I couldn't resist trying to compare the stillwater ponds with a running river and see if it was also very much alive in the matter of microscopic cells.
     </p>
     <p class="title">
-        Algae cellcount
+        Algae cell count
     </p>
     <p class="cellcount">
         
@@ -447,6 +447,10 @@
         createArea(areas['r7'], map);
         infoWindow = new google.maps.InfoWindow;
     }
+    var button = document.getElementsByClassName("b");
+    button.onmouseover = (event) => {
+            b1.style.backgroundImage = "url('https://www.clker.com/cliparts/W/i/K/w/1/D/glossy-orange-circle-icon-md.png')"
+        }
 </script>
 <style>
     html,
