@@ -359,13 +359,12 @@
                 strokeColor: "#002966"
             });
         });
-
         objInfo.obj.setMap(map);
         objInfo.obj.addListener('click', showArrays);
     }
     function showArrays(event) {
         console.log(this.content);
-        var vertices = this.getPath("r1");
+        var vertices = this.getPath("");
         infoWindow.setContent(this.content.windowInfo);
         infoWindow.setPosition(event.latLng);
         infoWindow.open(map);
@@ -392,6 +391,8 @@
         height: 100%;
         margin: 0;
         padding: 0;
+        overflow: hidden;
+        top:0px;
     }
     #map {
         height: 100%;
@@ -424,10 +425,7 @@
         width: 7.40rem;
         height: auto;
     }
-    body {
-        overflow: hidden;
-        top:0px;
-    }
+
 </style>
 
 </html>
