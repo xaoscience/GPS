@@ -37,7 +37,7 @@
     </p>
 </div>
 <div id="w3" class="imgwrapper">
-    <p class="title"><u>Lake 3</u> <br> Photos</p>
+    <p class="title"><u>Lake 3</u><br>Photos</p>
     <div class="imgbox">
         <a href="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4869.JPG" target="_blank">
         <img class="imgs1" src="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4869.JPG">
@@ -68,7 +68,7 @@
         </a>
         <div class="buttons">
                 <button class="b" onclick="plusDivs(-1)">&#10094;</button>
-                <button class ="b" onclick="plusDivs(1)">&#10095;</button>
+                <button class="b" onclick="plusDivs(1)">&#10095;</button>
         </div>
     </div>
     <script>
@@ -109,7 +109,7 @@
         </a>
         <div class="buttons">
                 <button class="b" onclick="plusDivs(-1)">&#10094;</button>
-                <button class ="b" onclick="plusDivs(1)">&#10095;</button>
+                <button class="b" onclick="plusDivs(1)">&#10095;</button>
         </div>
     </div>
     <script>
@@ -165,7 +165,7 @@
         </a>
         <div class="buttons">
                 <button class="b" onclick="plusDivs(-1)">&#10094;</button>
-                <button class ="b" onclick="plusDivs(1)">&#10095;</button>
+                <button class="b" onclick="plusDivs(1)">&#10095;</button>
         </div>
     </div>
     <script>
@@ -242,7 +242,6 @@
     }
     var map;
     var infoWindow;
-    var Num;
     var w1 = document.getElementById("w1");
     var w2 = document.getElementById("w2");
     var w3 = document.getElementById("w3");
@@ -253,7 +252,6 @@
     var areas = {
         'r1': {
             windowInfo: w1,
-            Num: 1,
             polyPath: [
                 {lat: 50.964738, lng: 5.335736},
                 {lat: 50.964763, lng: 5.335600},
@@ -276,7 +274,6 @@
         },
         'r2': {
             windowInfo: w2,
-            Num: 2,
             polyPath: [
                 {lat: 50.964747, lng: 5.334411},
                 {lat: 50.965617, lng: 5.333520},
@@ -289,7 +286,6 @@
         },
         'r3': {
             windowInfo: w3,
-            Num: 3,
             polyPath: [
                 {lat: 50.965258, lng: 5.335582},
                 {lat: 50.965734, lng: 5.335030},
@@ -337,7 +333,6 @@
         },
         'r4': {
             windowInfo: w4,
-            Num: 4,
             polyPath: [
                 {lat: 50.964835, lng: 5.339002},
                 {lat: 50.965585, lng: 5.340508},
@@ -355,7 +350,6 @@
         },
         'r5': {
             windowInfo: w5,
-            Num: 5,
             polyPath: [
                 {lat: 50.978906, lng: 5.320014},
                 {lat: 50.980386, lng: 5.319260},
@@ -380,7 +374,6 @@
         },
         'r6': {
             windowInfo: w6,
-            Num: 6,
             polyPath: [
                 {lat: 50.981167, lng: 5.318259},
                 {lat: 50.980622, lng: 5.318530},
@@ -399,7 +392,6 @@
         },
         'r7': {
             windowInfo: w7,
-            Num: 7,
             polyPath: [
                 {lat: 50.980893, lng: 5.319987},
                 {lat: 50.980405, lng: 5.318674}
@@ -423,7 +415,6 @@
                 fillColor: "#CC6633",
                 strokeColor: "#CC6633"
             });
-            showNum;
         });
         google.maps.event.addListener(objInfo.obj, "mouseout", function() {
             this.setOptions({
@@ -433,7 +424,6 @@
         });
         objInfo.obj.setMap(map);
         objInfo.obj.addListener('click', showArrays);
-        objInfo.obj.addListener('mouseover', showNum);
     }
     function showArrays(event) {
         console.log(this.content);
@@ -441,11 +431,6 @@
         infoWindow.setContent(this.content.windowInfo);
         infoWindow.setPosition(event.latLng);
         infoWindow.open(map);
-    }
-    function showNum(event) {
-        Num.setContent(this.content.Num);
-        Num.setPosition(event.latLng);
-        Num.open(map);
     }
     function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
