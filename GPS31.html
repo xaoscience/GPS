@@ -443,8 +443,8 @@
     }
     function showNum(event) {
         Num.setContent(this.content.Num);
-        Num.setPosition(MouseEvent);
-        Num.open(map)
+        Num.setPosition(event.latLng);
+        Num.open(map);
     }
     function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
