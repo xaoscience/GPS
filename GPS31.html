@@ -2,7 +2,7 @@
 <html>
 <div id="map"></div>
 <div id="w1" class="imgwrapper">
-    <p class="title">Photo</p>
+    <p class="title"><u>Lake 1</u>Photo</p>
     <div class="imgbox">
         <a href="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4866.JPG" target="_blank">
             <img class="img1s" src="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4866.JPG">
@@ -11,7 +11,7 @@
     <p class="comment">
         While approaching the lake, we found that it was more distant than usual. It was evident the waterlevel had degressed, but this small pond usually has grand fluctuations and it raised no concern.
     </p>
-    <a>Algae cellcount</a>
+    <a>Algae cell count</a>
     <p class="title">
 
     </p>
@@ -20,7 +20,7 @@
     </p>
 </div>
 <div id="w2" class="imgwrapper">
-    <p class="title">Photo</p>
+    <p class="title"><u>Lake2</u> <br> Photo</p>
     <div class="imgbox">
         <a href="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4867.JPG" target="_blank">
             <img class="img1s" src="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4867.JPG">
@@ -30,14 +30,14 @@
         This lake has always been hidden by tall grass, e.a. and has been an iddylic haven for many organisms. The bed has been raised in the middle, dividing the pond. It was a little lower than usual with very moist borders.
     </p>
     <p class="title">
-        Algae cellcount
+        Algae cell count
     </p>
     <p class="cellcount">
         
     </p>
 </div>
 <div id="w3" class="imgwrapper">
-    <p class="title">Photos</p>
+    <p class="title"><u>Lake 3</u> <br> Photos</p>
     <div class="imgbox">
         <a href="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4869.JPG" target="_blank">
         <img class="imgs1" src="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4869.JPG">
@@ -66,38 +66,40 @@
         <a href="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4883.JPG" target="_blank">
             <img class="imgs1" src="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4883.JPG">
         </a>
-        <button onclick="plusDivs(-1)">&#10094;</button>
-        <button onclick="plusDivs(1)">&#10095;</button>
+        <div class="buttons">
+                <button class="b" onclick="plusDivs1(-1)">&#10094;</button>
+                <button class="b" onclick="plusDivs1(1)">&#10095;</button>
+        </div>
     </div>
     <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
+        var slideIndex1 = 1;
+        showDivs1(slideIndex1);
+        function plusDivs1(n) {
+          showDivs1(slideIndex1 += n);
         }
-        function showDivs(n) {
+        function showDivs1(n) {
           var i;
           var x = document.getElementsByClassName("imgs1");
-          if (n > x.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = x.length}
+          if (n > x.length) {slideIndex1 = 1}
+          if (n < 1) {slideIndex1 = x.length}
           for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";  
           }
-          x[slideIndex-1].style.display = "block";  
+          x[slideIndex1-1].style.display = "block";  
         }
         </script>
     <p class="comment">
         The most popular and great pond of the Platweiers is always a beautiful sight to behold or (some years) a great place to ice-skate. What we didn't expect was what seemed to be a result of the recent heatwave, resembling a terrible drought. We found almost dried out layers of sludge and the shells of fresh water pearlclams.    
     </p>
     <p class="title">
-        Algae cellcount
+        Algae cell count
     </p>
     <p class="cellcount">
         
     </p>
 </div>
 <div id="w4" class="imgwrapper">
-    <p class="title">Photos</p>
+    <p class="title"><u>Lake 4</u>Photos</p>
     <div class="imgbox">
         <a href="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4885.JPG" target="_blank">
             <img class="imgs2" src="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4885.JPG">
@@ -105,38 +107,40 @@
         <a href="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4886.JPG" target="_blank">
             <img class="imgs2" src="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4886.JPG">
         </a>
-        <button onclick="plusDivs(-1)">&#10094;</button>
-        <button onclick="plusDivs(1)">&#10095;</button>
+        <div class="buttons">
+                <button class="b" onclick="plusDivs2(-1)">&#10094;</button>
+                <button class ="b" onclick="plusDivs2(1)">&#10095;</button>
+        </div>
     </div>
     <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
+        var slideIndex2 = 1;
+        showDivs2(slideIndex2);
+        function plusDivs2(n) {
+          showDivs2(slideIndex2 += n);
         }
-        function showDivs(n) {
+        function showDivs2(n) {
           var i;
           var x = document.getElementsByClassName("imgs2");
-          if (n > x.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = x.length}
+          if (n > x.length) {slideIndex2 = 1}
+          if (n < 1) {slideIndex2 = x.length}
           for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";  
           }
-          x[slideIndex-1].style.display = "block";  
+          x[slideIndex2-1].style.display = "block";  
         }
         </script>
     <p class="comment">
         Small pond connected through a tube with the previous big lake. Still, the stilness of the water, the shadows cast, e.a. might still differ grandly, thus taking a sample still seemed interesting.
     </p>
     <p class="title">
-        Algae cellcount
+        Algae cell count
     </p>
     <p class="cellcount">
         
     </p>
 </div>
 <div id="w5" class="imgwrapper">
-    <p class="title">Photos</p>
+    <p class="title"><u>Lake 5</u>Photos</p>
     <div class="imgbox">
         <a href="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4887.JPG" target="_blank">
             <img class="imgs3" src="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4887.JPG">
@@ -159,38 +163,40 @@
         <a href="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4896.JPG" target="_blank">
             <img class="imgs3" src="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4896.JPG">
         </a>
-        <button onclick="plusDivs(-1)">&#10094;</button>
-        <button onclick="plusDivs(1)">&#10095;</button>
+        <div class="buttons">
+                <button class="b" onclick="plusDivs3(-1)">&#10094;</button>
+                <button class ="b" onclick="plusDivs3(1)">&#10095;</button>
+        </div>
     </div>
     <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
+        var slideIndex3 = 1;
+        showDivs3(slideIndex3);
+        function plusDivs3(n) {
+          showDivs3(slideIndex3 += n);
         }
-        function showDivs(n) {
+        function showDivs3(n) {
           var i;
           var x = document.getElementsByClassName("imgs3");
-          if (n > x.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = x.length}
+          if (n > x.length) {slideIndex3 = 1}
+          if (n < 1) {slideIndex3 = x.length}
           for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";  
           }
-          x[slideIndex-1].style.display = "block";  
+          x[slideIndex3-1].style.display = "block";  
         }
         </script>
     <p class="comment">
         At first, I attempted to approach the lake left of this one. However, both are stillwater fishbreeding ponds and there was a putrid smell of rot coming from the, otherwise very similar, left pond. 
     </p>
     <p class="title">
-        Algae cellcount
+        Algae cell count
     </p>
     <p class="cellcount">
         
     </p>
 </div>
 <div id="w6" class="imgwrapper">
-    <p class="title">Photo</p>
+    <p class="title"><u>Lake 6</u>Photo</p>
     <div class="imgbox">
         <a href="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4901.JPG" target="_blank">
             <img class="img1s" src="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4901.JPG">
@@ -200,14 +206,14 @@
     It was rather brave to cross the barbed wire surround thing this peaceful lake, where birds take rest. It's surrounded by medium prickly brush and nettles, and has been divided by likewise forested banks (more than is shown on google maps) and contained more small plants and possibly more sun than other ponds.    
     </p>
     <p class="title">
-        Algae cellcount
+        Algae cell count
     </p>
     <p class="cellcount">
         
     </p>
 </div>
 <div id="w7" class="imgwrapper">
-    <p class="title">Photo</p>
+    <p class="title"><u>River</u>Photo</p>
     <div class="imgbox">
         <a href="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_48902.JPG" target="_blank">
             <img class="img1s" src="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4902.JPG">
@@ -217,7 +223,7 @@
         This river is connected to the entire Slangebeek running through the forest I call part of my home. I couldn't resist trying to compare the stillwater ponds with a running river and see if it was also very much alive in the matter of microscopic cells.
     </p>
     <p class="title">
-        Algae cellcount
+        Algae cell count
     </p>
     <p class="cellcount">
         
@@ -225,9 +231,6 @@
 </div>
 <script async defer src="https://maps.googleapis.com/maps/api/js?&key=AIzaSyDZdme-UDOguakLNhMaiw-7O8jeJ5ZNF2g&callback=initMap&&libraries=places&signedin=true"></script>
 <script>
-    // This example creates a simple polygon representing the Bermuda Triangle.
-    // When the user clicks on the polygon an info window opens, showing
-    // information about the polygon's coordinates.
     window.onbeforeunload = function () {
         window.scrollTo(0, 0);
     }
@@ -395,7 +398,7 @@
         }
     };
     function createArea(objInfo, map) {
-        objInfo.obj = new google.maps.Polygon({
+            objInfo.obj = new google.maps.Polygon({
             paths: objInfo.polyPath,
             strokeColor: "#002966",
             strokeOpacity: 0.8,
@@ -465,24 +468,30 @@
     .imgbox {
         flex-direction: column;
         justify-content: center;
-        justify-content: space-between;
-        text-justify: distribute-all-lines;
         margin: 0%;
+        text-align: center;
     }
     .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-between;
         font-weight: bold;
         font-size: 1rem;
-        justify-content: center;
+        text-align: center;
+        block-size: 3rem;
     }
-    p {
-        display: flex;
-        justify-content: center;
-    }
-    .imgs, .img1s, .imgs1, .imgs2, .imgs3 {
+
+    .img1s, .imgs1, .imgs2, .imgs3 {
         width: 15rem;
         height: auto;
     }
-
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        margin-top: 1rem;
+    }
 </style>
-
-</html>
