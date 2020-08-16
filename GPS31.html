@@ -80,7 +80,7 @@
           var x = document.getElementsByClassName("imgs1");
           if (n > x.length) {slideIndex = 1}
           if (n < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
+          for (i = 1; i < x.length; i++) {
             x[i].style.display = "none";  
           }
           x[slideIndex-1].style.display = "block";  
@@ -119,7 +119,7 @@
           var x = document.getElementsByClassName("imgs2");
           if (n > x.length) {slideIndex = 1}
           if (n < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
+          for (i = 1; i < x.length; i++) {
             x[i].style.display = "none";  
           }
           x[slideIndex-1].style.display = "block";  
@@ -173,7 +173,7 @@
           var x = document.getElementsByClassName("imgs3");
           if (n > x.length) {slideIndex = 1}
           if (n < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
+          for (i = 1; i < x.length; i++) {
             x[i].style.display = "none";  
           }
           x[slideIndex-1].style.display = "block";  
@@ -478,7 +478,7 @@
         width: 15rem;
         height: auto;
     }
-    .imgs {
+    .imgs, .imgs1, .imgs2, .imgs3 {
         width: 7.40rem;
         height: auto;
     }
