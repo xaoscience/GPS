@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Image Maps</h2>
+        <p>Click on the cup of coffee to execute a JavaScript function:</p>
+        <div class="container">
+            <img id="GPS" src="https://lh3.googleusercontent.com/gsp4dGLEpJskaJZnWJDRvO5i6PVydXxW-5iiP9CoMDPsr727PQeJ0o4m4-Any5dLOOyod8-UJvVKQdcAdpnElTD9DDN5u3CmqeYRNfJHKCzPkOnbkQQZN0dKme8RaPlyScFcqoK-WH2ThM3c9JP3PzcchqRuNgOAw-L00SeVohJ3wdgbk82-qsV8X-bjbc0Yz3jK-Fvs2s5WuCbURrm_G6JDUik3WhLGxgrdoNte_QpLW6bOFu_33GRGJRjsnmh73M5yiQcKrGqOp4sUwNIy9-UmG4T6sj31FIsSJVIWqTwQHoSRIXt026NRlPPcvy8a-8TIJlVTCb1e8hraKL4WJPYN0saaZhdioe5VxEJYcJcrjgL7ph1YlSnXzR7opAK43ZX4k12s8gfpVX0zjtzoBdMd-rTyCk24xsGCjuNzB-Sv_ir0R5-X0YP1cdRtxXYmdbQLXudMm_aeoOE1oF4rIRQ6jywtq-wTQzj_0vrRJICuW5wpNqrLyjVw6R3skmirV_EUbfiZ0YRaCAi-BjwJDKIeygnTB6T3JO57s_k0fQZ7lVVxlVRKSbUHnjjz1bFRfYXJ0MAJPTaqKSODIKUCO85kGVDjeaqDTTc-yifW27Ooe-W_5_J_bl5nwzDutKDzEPL1J57HIfxF6Zk9HaX4uuiB9Q06Yl2HwKGiic78kgwFKHULOw17nt2tK86laQ=w1411-h866-no?authuser=0" width="100%" height="100%" alt="Workplace" usemap="#map">
+            <div class="overlay">
+                <map name="map">
+                        <area id="c1" shape="circle" coords="790,790,44" onclick="myFunction()">
+                </map>
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+    var c1Rect = document.getElementById("c1").getBoundingClientRect()
+    function myFunction() {
+    alert("You clicked the coffee cup!");
+    }
+
+</script>
+<style>
+    #gps {
+        z-index: -1;
+    }
+    .container {
+        position:relative;
+    }
+    body {
+    }
+    #c1 {
+        border-radius: 10px;
+        border-width: 3px;
+        border-color:black;
+        border-style: solid;
+    }
+</style>
