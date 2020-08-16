@@ -433,6 +433,7 @@
         });
         objInfo.obj.setMap(map);
         objInfo.obj.addListener('click', showArrays);
+        objInfo.obj.addListener('mouseover', showNum);
     }
     function showArrays(event) {
         console.log(this.content);
