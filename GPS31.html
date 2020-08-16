@@ -66,8 +66,10 @@
         <a href="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4883.JPG" target="_blank">
             <img class="imgs1" src="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4883.JPG">
         </a>
-        <button onclick="plusDivs(-1)">&#10094;</button>
-        <button onclick="plusDivs(1)">&#10095;</button>
+        <div class="buttons">
+                <button onclick="plusDivs(-1)">&#10094;</button>
+                <button onclick="plusDivs(1)">&#10095;</button>
+        </div>
     </div>
     <script>
         var slideIndex = 1;
@@ -105,8 +107,10 @@
         <a href="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4886.JPG" target="_blank">
             <img class="imgs2" src="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4886.JPG">
         </a>
-        <button onclick="plusDivs(-1)">&#10094;</button>
-        <button onclick="plusDivs(1)">&#10095;</button>
+        <div class="buttons">
+                <button onclick="plusDivs(-1)">&#10094;</button>
+                <button onclick="plusDivs(1)">&#10095;</button>
+        </div>
     </div>
     <script>
         var slideIndex = 1;
@@ -159,8 +163,10 @@
         <a href="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4896.JPG" target="_blank">
             <img class="imgs3" src="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4896.JPG">
         </a>
-        <button onclick="plusDivs(-1)">&#10094;</button>
-        <button onclick="plusDivs(1)">&#10095;</button>
+        <div class="buttons">
+                <button onclick="plusDivs(-1)">&#10094;</button>
+                <button onclick="plusDivs(1)">&#10095;</button>
+        </div>
     </div>
     <script>
         var slideIndex = 1;
@@ -481,7 +487,11 @@
         width: 15rem;
         height: auto;
     }
-
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 </style>
 
 </html>
