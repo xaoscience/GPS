@@ -86,7 +86,28 @@
         <a href="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4886.JPG" target="_blank">
             <img class="imgs" src="https://raw.githubusercontent.com/xaoscience/GPS/master/Files/IMG_4886.JPG">
         </a>
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
     </div>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
     <p class="comment">
         Small pond connected through a tube with the previous big lake. Still, the stilness of the water, the shadows cast, e.a. might still differ grandly, thus taking a sample still seemed interesting.
     </p>
